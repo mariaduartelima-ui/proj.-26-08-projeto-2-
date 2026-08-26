@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Digital Seguro - Segurança na Internet para Idosos</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+ 
+    <!-- CONTROLES DE ACESSIBILIDADE VIA CSS -->
+    <input type="radio" name="fonte-tamanho" id="fonte-normal" class="entrada-controle-acessibilidade" checked>
+    <input type="radio" name="fonte-tamanho" id="fonte-media" class="entrada-controle-acessibilidade">
+    <input type="radio" name="fonte-tamanho" id="fonte-grande" class="entrada-controle-acessibilidade">
+    <input type="checkbox" id="alternar-alto-contraste" class="entrada-controle-acessibilidade">
+
+    <!-- ESTRUTURA PRINCIPAL -->
+    <div class="container-aplicacao">
+
+        <!-- BARRA DE FERRAMENTAS DE ACESSIBILIDADE FIXA -->
+        <aside class="barra-acessibilidade" aria-label="Ferramentas de Acessibilidade">
+            <div class="titulo-acessibilidade">
+                <span aria-hidden="true"></span> Acessibilidade:
+            </div>
+            <div class="controles-acessibilidade">
+                <span>Tamanho da Fonte:</span>
+                <label for="fonte-normal" class="botao-acesso" title="Tamanho de texto normal">A</label>
+                <label for="fonte-media" class="botao-acesso" title="Tamanho de texto médio">A+</label>
+                <label for="fonte-grande" class="botao-acesso" title="Tamanho de texto grande">A++</label>
+                
+                <span style="margin-left: 10px;">Cores:</span>
+                <label for="alternar-alto-contraste" class="botao-acesso" title="Ativar ou desativar alto contraste">
+                    <span aria-hidden="true"></span> Alto Contraste
+                </label>
+                
+            <!-- LEITURA DA PÁGINA -->
+
+           <div class="controles-voz">
+    <button type="button" class="botao-acesso botao-voz" id="btnLerPagina">
+         Ler Página
+    </button>
+
+    <button type="button" class="botao-acesso botao-voz-parar" id="btnPararLeitura">
+         Parar Leitura
+    </button>
+</div>
+
+        </aside>
+
+        <!-- CABEÇALHO -->
+        <header id="inicio">
+            <h1>Guia Digital Seguro</h1>
+            <p>Seu espaço de aprendizado e proteção no mundo da internet.</p>
+        </header>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav aria-label="Menu Principal">
+            <ul class="lista-navegacao">
+                <li><a href="#inicio" class="link-navegacao">Início</a></li>
+                <li><a href="#dicas" class="link-navegacao">Dicas Importantes</a></li>
+                <li><a href="#direitos" class="link-navegacao">Direitos na Internet</a></li>
+                <li><a href="#golpes" class="link-navegacao">Identificar Golpes</a></li>
+                <li><a href="#canais-ajuda" class="link-navegacao">Canais de Ajuda</a></li>
+            </ul>
+        </nav>
+
+        <!-- BANNER DE INÍCIO COM BOTÃO DE AJUDA -->
+        <section class="banner-principal">
+            <h2>Navegue com Tranquilidade e Segurança</h2>
+            <p>A internet aproxima quem amamos e facilita a nossa vida diária. Aprenda a reconhecer perigos e saiba exatamente o que fazer se tiver dúvidas ou precisar de auxílio imediato.</p>
+            <a href="#canais-ajuda" class="botao-ajuda" role="button">
+                <span aria-hidden="true"></span> PRECISA DE AJUDA AGORA? CLIQUE AQUI
+            </a>
+        </section>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main>
+
+            <!-- SEÇÃO 1: DICAS IMPORTANTES -->
+            <section id="dicas">
+                <h2 class="titulo-secao">
+                    <span aria-hidden="true"></span> Dicas Importantes
+                </h2>
+                <div class="grade-dicas">
+                    <article class="cartao-dica">
+                        <div class="icone-dica" aria-hidden="true">🔒</div>
+                        <h3>1. Guarde Suas Senhas</h3>
+                        <p>Nunca compartilhe suas senhas com estranhos, nem por telefone ou mensagem. Anote-as em um caderno em casa.</p>
+                    </article>
+
+                    <article class="cartao-dica">
+                        <div class="icone-dica" aria-hidden="true">🛑</div>
+                        <h3>2. Pare e Respire</h3>
+                        <p>Diante de mensagens urgentes solicitando dinheiro ou dados, pare e confirme com um familiar de confiança antes de agir.</p>
+                    </article>
+
+                    <article class="cartao-dica">
+                        <div class="icone-dica" aria-hidden="true">🔗</div>
+                        <h3>3. Cuidado com Links</h3>
+                        <p>Não clique em links ou botões azuis recebidos de desconhecidos prometendo prêmios, brindes ou ofertas surpreendentes.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 2: DIREITOS NA INTERNET -->
+            <section id="direitos">
+                <h2 class="titulo-secao">
+                    <span aria-hidden="true">⚖️</span> Direitos na Internet
+                </h2>
+                <article class="caixa-direitos">
+                    <p>Assim como na vida física, você possui direitos protegidos por lei ao usar a internet, o celular ou computadores no Brasil (garantidos pelo Estatuto do Idoso e pelo Marco Civil da Internet):</p>
+                    
+                    <ul class="lista-direitos">
+                        <li><strong>Direito à Inclusão Digital:</strong> O acesso às tecnologias deve ser facilitado, com ferramentas compreensíveis e acessíveis para todas as idades.</li>
+                        <li><strong>Direito à Privacidade e Proteção de Dados:</strong> Nenhuma empresa ou pessoa pode usar ou vender seus dados pessoais, bancários ou fotos sem o seu consentimento expresso.</li>
+                        <li><strong>Direito à Informação Clara:</strong> Bancos, lojas virtuais e serviços públicos devem apresentar termos claros, sem letras miúdas ou pegadinhas no ambiente digital.</li>
+                        <li><strong>Direito de Recorrer em Caso de Fraude:</strong> Caso seja vítima de um golpe, você tem o direito de ser atendido com prioridade pelos órgãos de proteção ao consumidor (como o Procon), delegacias e instituições financeiras.</li>
+                    </ul>
+
+                    <p><em>Importante: Errar ao mexer no celular é normal. Você tem o direito de aprender no seu tempo e pedir ajuda sempre que necessário!</em></p>
+                </article>
+            </section>
+
+            <!-- SEÇÃO 3: COMO SABER SE ESTOU CAINDO EM UM GOLPE? -->
+            <section id="golpes">
+                <h2 class="titulo-secao">
+                    <span aria-hidden="true">🚨</span> Como Saber se Estou Caindo em um Golpe?
+                </h2>
+                <p style="margin-bottom: 20px;">Fique atento(a)! Os golpistas costumam usar certas atitudes para enganar as pessoas. Se você perceber algum destes sinais, desconfie na hora:</p>
+
+                <div class="grade-suspeita">
+                    <article class="cartao-suspeito">
+                        <div class="cabecalho-suspeito">
+                            <span class="icone-suspeito" aria-hidden="true">⏳</span>
+                            <span>Pressão e Urgência Excessiva</span>
+                        </div>
+                        <p>A pessoa diz que você precisa pagar ou responder "agora mesmo", senão sua conta será bloqueada ou você perderá um benefício. <strong>Golpistas odeiam quando você pensa com calma.</strong></p>
+                    </article>
+
+                    <article class="cartao-suspeito">
+                        <div class="cabecalho-suspeito">
+                            <span class="icone-suspeito" aria-hidden="true">📲</span>
+                            <span>Mudança Inesperada de Número</span>
+                        </div>
+                        <p>Uma mensagem de um número desconhecido usando a foto de um parente (filho, neto) dizendo que trocou de chip e precisa urgente de um PIX ou transferência.</p>
+                    </article>
+
+                    <article class="cartao-suspeito">
+                        <div class="cabecalho-suspeito">
+                            <span class="icone-suspeito" aria-hidden="true">🎁</span>
+                            <span>Prêmios e Vantagens "Fáceis"</span>
+                        </div>
+                        <p>Mensagens ou e-mails avisando que você ganhou um prêmio em dinheiro, uma viagem ou um grande desconto sem ter participado de nenhum sorteio.</p>
+                    </article>
+
+                    <article class="cartao-suspeito">
+                        <div class="cabecalho-suspeito">
+                            <span class="icone-suspeito" aria-hidden="true">🔑</span>
+                            <span>Pedir Senhas ou Códigos do Celular</span>
+                        </div>
+                        <p>Ligação dizendo ser do banco pedindo para você digitar sua senha ou informar um código numérico que acabou de chegar por SMS no seu telefone.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- CANAIS DE AJUDA (DESTINO DO BOTÃO DE AJUDA DO BANNER) -->
+            <section id="canais-ajuda" class="secao-ajuda">
+                <h2 class="titulo-secao" style="margin-top: 0;">
+                    <span aria-hidden="true">📞</span> Onde Pedir Ajuda se Tiver Dúvidas ou Problemas
+                </h2>
+                <p>Se você desconfiar de uma mensagem, fizer um pagamento por engano ou precisar de auxílio imediato, utilize os canais abaixo:</p>
+
+                <div class="grade-contatos">
+                    <div class="cartao-contato">
+                        <h3>Polícia Militar</h3>
+                        <p>Para casos urgentes de segurança</p>
+                        <span class="numero-contato">190</span>
+                    </div>
+
+                    <div class="cartao-contato">
+                        <h3>Direitos Humanos</h3>
+                        <p>Denúncias e apoio à pessoa idosa</p>
+                        <span class="numero-contato">Disque 100</span>
+                    </div>
+
+                    <div class="cartao-contato">
+                        <h3>Seu Banco</h3>
+                        <p>Ligue para o número no <strong>verso do seu cartão</strong> magnético para bloquear valores.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer>
+            <p><strong>Guia Digital Seguro</strong> — Facilitando o acesso seguro e consciente à internet.</p>
+            <p>Sua segurança é prioridade. Na dúvida, sempre pergunte a alguém de confiança!</p>
+            <a href="#inicio" class="botao-topo"><span aria-hidden="true">⬆️</span> Voltar ao Topo da Página</a>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
